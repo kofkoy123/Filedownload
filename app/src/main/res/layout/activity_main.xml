@@ -5,13 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center"
     tools:context="com.xfc.filedownload.MainActivity">
 
     <Button
+        android:id="@+id/btn_downlaod"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="download"
         android:text="下载" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -28,5 +31,17 @@
         android:id="@+id/tv_progress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
+
+    <com.xiaochen.progressroundbutton.AnimDownloadProgressButton
+        android:id="@+id/anim_btn"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        app:progressbtn_radius="10"
+
+        android:text="下载"
+        android:textSize="11sp"
+        app:progressbtn_backgroud_color="@android:color/holo_orange_light"
+        app:progressbtn_backgroud_second_color="@android:color/holo_green_light" />
 
 </LinearLayout>

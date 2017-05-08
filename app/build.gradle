@@ -28,4 +28,5 @@ dependencies {
     compile 'com.android.support.constraint:constraint-layout:1.0.1'
     testCompile 'junit:junit:4.12'
     compile 'org.wlf:FileDownloader:0.3.2'
+    compile 'com.xiaochendev.progressroundbtn:library:2.0.0'
 }
